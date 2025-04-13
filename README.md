@@ -1,46 +1,36 @@
 Product Availability Tracker (PAT)
-A simple Python script to monitor product availability on websites and send notifications via Telegram when a product is available.
-Constructed specifically for site https://makeup.com.ua (MAKEUP)
+A simple Python script to monitor product availability on websites and send notifications via Telegram when a product becomes available. Constructed specifically for the site https://makeup.com.ua (MAKEUP).
 
 Author: Lysenko Alexander
 Date: 13-04-2025
 
 Description
-
-Script gathers urls of products provided by user and continuoulsy checks part of the code responsible for availabilty.
-
-It used random intervals set from 5 to 30 seconds to avoid overloading the site.
-
-When product becomes available it messages the user via telegram bot 
+The script gathers URLs of products provided by the user and continuously checks the code responsible for availability. It uses random intervals (5 to 30 minutes) to avoid overloading the site. When a product becomes available, the script sends a notification via Telegram.
 
 Features
-
 Scrapes product pages for availability.
 
 Sends real-time notifications via Telegram.
 
 Customizable monitoring intervals with random delays.
 
-Simple command-line interface to add URLs.
+Simple command-line interface for adding URLs.
 
-Continuous monitoring until stopped manually.
+Continuous monitoring until manually stopped.
 
 Usage
+The script will prompt you to enter the number of URLs you want to monitor.
 
-The script wil promt you to enter number of ulrs you want to monitor
+Enter the URLs, pressing Enter after each one.
 
-Enter the urls, pressing Enter after each one
-
-Once all URLs are entered, the script will start monitoring them and will notify you via Telegram when a product becomes available.
+Once all URLs are entered, the script will begin monitoring them and notify you via Telegram when a product becomes available.
 
 Configuration
-
-Before running the script, configure it to use your Telegram bot token and chat ID.
+Before running the script, configure it with your Telegram bot token and chat ID:
 
 Create a Telegram bot and obtain your bot token from BotFather.
 
 Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
-
 Example Output:
 
 Script Output (Terminal/Console):
