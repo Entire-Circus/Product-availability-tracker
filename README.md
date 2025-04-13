@@ -4,10 +4,11 @@ A simple Python script to monitor product availability on websites and send noti
 Author: Lysenko Alexander
 Date: 13-04-2025
 
-Description
+Description:
 The script gathers URLs of products provided by the user and continuously checks the code responsible for availability. It uses random intervals (5 to 30 minutes) to avoid overloading the site. When a product becomes available, the script sends a notification via Telegram.
 
-Features
+Features:
+
 Scrapes product pages for availability.
 
 Sends real-time notifications via Telegram.
@@ -18,19 +19,22 @@ Simple command-line interface for adding URLs.
 
 Continuous monitoring until manually stopped.
 
-Usage
+Usage:
+
 The script will prompt you to enter the number of URLs you want to monitor.
 
 Enter the URLs, pressing Enter after each one.
 
 Once all URLs are entered, the script will begin monitoring them and notify you via Telegram when a product becomes available.
 
-Configuration
+Configuration:
+
 Before running the script, configure it with your Telegram bot token and chat ID:
 
 Create a Telegram bot and obtain your bot token from BotFather.
 
 Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
+
 Example Output:
 
 Script Output (Terminal/Console):
