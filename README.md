@@ -70,3 +70,5 @@ Telegram Bot Notification:
 "Product: Maybelline New York Lash Sensational is available"
 
 "Product: Освітлювальна ампульна сироватка для обличчя is not available"
+
+"Shutting down..."
