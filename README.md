@@ -39,4 +39,4 @@ Before running the script, configure it to use your Telegram bot token and chat 
 
 Create a Telegram bot and obtain your bot token from BotFather.
 
-Replace the placeholders in the script with your actual TOKEN and CHAT_ID:
+Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
