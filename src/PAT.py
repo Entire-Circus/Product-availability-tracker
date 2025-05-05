@@ -39,10 +39,15 @@ async def notify_telegram(message):
 # --- USER INPUT (synchronously) ---
 def get_user_input():
     global urls
-    
+    while True:
+        user_input = input("Use existing config? (y/n): ").strip().lower()
+        if user_input in {"y", "n"}:
+            overwrite = user_input == "n"
+            break
+        print("Enter either y or n")
     while True:
         # Ask the user for how many URLs they want to monitor
-        amount_input = cached_input("How many URLs do you want to monitor? Enter a number and press Enter: ")
+        amount_input = cached_input("How many URLs do you want to monitor? Enter a number and press Enter", overwrite=overwrite)
         # Prevents user from breaking the script by enterning incorrect values
         if amount_input.isdigit() and int(amount_input) > 0:
             amount = int(amount_input)
@@ -53,7 +58,7 @@ def get_user_input():
     for _ in range(amount):
         while True:
             # Prompt the user to input the URL for monitoring
-            url = cached_input(f"Paste URL and press Enter ({amount} remaining): ")
+            url = cached_input(f"Paste URL and press Enter ({amount} remaining)", overwrite=overwrite)
             # Prevents user from breaking the script by enterning incorrect urls
             if url.startswith("http"):
                 urls.append(url)
