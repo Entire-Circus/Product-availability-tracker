@@ -14,7 +14,7 @@ import urllib.request  # For sending HTTP requests to fetch product pages
 from bs4 import BeautifulSoup  # For parsing HTML content and extracting data
 import random  # For generating random delays between checks
 from telegram import Bot  # To send notifications to Telegram
-from cached_input import cached_input
+from cached_input import cached_input # To save user input
 
 # --- TELEGRAM CONFIG ---
 TOKEN = "Your_token_here"
