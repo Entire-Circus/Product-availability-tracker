@@ -45,9 +45,10 @@ Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
 
 ---
 
-# Example Output:
-
+<pre> ### Example Output:
+```
 Use existing config? (y/n): n
+
 How many URLs do you want to monitor? Enter a number and press Enter: 4
 
 Paste URL and press Enter (4 remaining): https://makeup.com.ua/ua/product/3608/
@@ -81,6 +82,8 @@ Next check is in 20 minutes / 1200 seconds
 Press Enter to stop monitoring...
 
 Shutting down...
+
+``` </pre>
 
 ---
 
