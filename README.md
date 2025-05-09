@@ -47,32 +47,32 @@ Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
 
 # Example Output:
 
-Script Output (Terminal/Console):
+Use existing config? (y/n): n
 
 How many URLs do you want to monitor? Enter a number and press Enter: 2
 
-Paste URL and press Enter (2 remaining): https://makeup.com.ua/ua/product/159015/
+Paste URL and press Enter (2 remaining): https://eva.ua/ua/pr1431541/
 
 Paste URL and press Enter (1 remaining): https://makeup.com.ua/ua/product/1120231/#/option/2649605/
 
-Your URLs are: ['https://makeup.com.ua/ua/product/159015/', 'https://makeup.com.ua/ua/product/1120231/#/option/2649605/']
+Your URLs are: ['https://eva.ua/ua/pr1431541/', 'https://makeup.com.ua/ua/product/1120231/#/option/2649605/']
 
 Monitoring products ...
 
-Product: Maybelline New York Lash Sensational is available
+Product: Гель для душу Green Way Чорна орхідея, жіночий, 750 мл is available
 
 Product: Освітлювальна ампульна сироватка для обличчя is not available
 
-Next check is in 28 minutes / 1680 seconds
+Next check is in 18 minutes / 1080 seconds
 
-Next check is in 15 minutes / 900 seconds
+Next check is in 29 minutes / 1740 seconds
 
 Press Enter to stop monitoring...
 
 Telegram Bot Notification:
 
-"Product: Maybelline New York Lash Sensational is available"
+"Product: Гель для душу Green Way Чорна орхідея, жіночий, 750 мл is available from https://eva.ua/ua/pr1431541/"
 
-"Product: Освітлювальна ампульна сироватка для обличчя is not available"
+"Product: Освітлювальна ампульна сироватка для обличчя is not available from https://makeup.com.ua/ua/product/1120231/#/option/2649605/"
 
 "Shutting down..."

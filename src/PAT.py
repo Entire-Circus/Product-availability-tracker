@@ -98,7 +98,7 @@ async def check_product_availability(url):
                 if availability:
                     print(f"Product: {name.text} is available from {url}")
                     # Send message trough telegram bot whe prodcut is available
-                    await notify_telegram(f"Product: {name.text} is available")
+                    ##await notify_telegram(f"Product: {name.text} is available from {url}")
                 else:
                     print(f"Product: {name.text} is not available")
 
@@ -115,11 +115,13 @@ async def check_product_availability(url):
                 availability = div.find("span", class_="a-product-stock__status").text.strip()
                 # Extract the name of the product
                 name = soup.find("h1", class_="sf-heading__title").text.strip()
+                print(availability)
 
-                if availability == "В наявності":
+                # strings for Ukrainian and russian website translation
+                if availability == "В наявності" or availability == "В наличии":
                     print(f"Product: {name} is available  from {url}")
                     # Send message trough telegram bot whe prodcut is available
-                    await notify_telegram(f"Product: {name} is available")
+                    ##await notify_telegram(f"Product: {name} is available from {url}")
                 else:
                     print(f"Product: {name} is not available")
 
