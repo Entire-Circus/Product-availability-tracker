@@ -1,5 +1,7 @@
 {
-    "How many URLs do you want to monitor? Enter a number and press Enter: ": "2",
-    "Paste URL and press Enter (2 remaining): ": "https://makeup.com.ua/ua/product/995244/",
-    "Paste URL and press Enter (1 remaining): ": "https://makeup.com.ua/ua/product/1451847/"
+    "How many URLs do you want to monitor? Enter a number and press Enter": "4",
+    "Paste URL and press Enter (1 remaining)": "https://eva.ua/ua/pr518832/",
+    "Paste URL and press Enter (2 remaining)": "https://eva.ua/ua/pr477887/",
+    "Paste URL and press Enter (4 remaining)": "https://makeup.com.ua/ua/product/3608/",
+    "Paste URL and press Enter (3 remaining)": "https://makeup.com.ua/ua/product/488791/#/option/2000573/"
 }

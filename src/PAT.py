@@ -26,6 +26,12 @@ bot = Bot(token=TOKEN)
 urls = []  # List to store URLs to monitor
 running = True  # Flag to control while loop for continuous monitoring
 
+# Headers to simulate real browser
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9",
+}
 
 # --- TELEGRAM NOTIFICATION ---
 async def notify_telegram(message):
@@ -75,25 +81,50 @@ async def check_product_availability(url):
         # try block allows the script to continue working even if scraping part crashes
         try:
             # Send a get request to URL and read the response
-            request = urllib.request.urlopen(url).read()
-            # Decode the bytes to str
-            data = request.decode()
-            # Parse the data with BeautifulSoup
-            soup = BeautifulSoup(data, "html.parser")
+            if url.startswith("https://makeup.com.ua/"):
+                request = urllib.request.urlopen(url).read()
+                # Decode the bytes to str
+                data = request.decode()
+                # Parse the data with BeautifulSoup
+                soup = BeautifulSoup(data, "html.parser")
 
-            # Find the div that contains product's information
-            code_wrap = soup.find("div", class_="product-item__code-wrap")
-            # Find the product availability itself
-            availability = code_wrap.find("div", class_="product-item__status green", id="product_enabled")
-            # Extract the name of the product
-            name = soup.find("span", class_="product-item__name")
+                # Find the div that contains product's information
+                code_wrap = soup.find("div", class_="product-item__code-wrap")
+                # Find the product availability itself
+                availability = code_wrap.find("div", class_="product-item__status green", id="product_enabled")
+                # Extract the name of the product
+                name = soup.find("span", class_="product-item__name")
 
-            if availability:
-                print(f"Product: {name.text} is available")
-                # Send message trough telegram bot whe prodcut is available
-                #await notify_telegram(f"Product: {name.text} is available")
-            else:
-                print(f"Product: {name.text} is not available")
+                if availability:
+                    print(f"Product: {name.text} is available from {url}")
+                    # Send message trough telegram bot whe prodcut is available
+                    await notify_telegram(f"Product: {name.text} is available")
+                else:
+                    print(f"Product: {name.text} is not available")
+
+            elif url.startswith("https://eva.ua/"):
+                req = urllib.request.Request(url, headers=headers)
+                request = urllib.request.urlopen(req).read()
+                # Decode the bytes to str
+                data = request.decode()
+                # Parse the data with BeautifulSoup
+                soup = BeautifulSoup(data, "html.parser")
+                # Find the div that contains product's information
+                div = soup.find("div", class_="a-product-stock")
+                # Find the product availability itself
+                availability = div.find("span", class_="a-product-stock__status").text.strip()
+                # Extract the name of the product
+                name = soup.find("h1", class_="sf-heading__title").text.strip()
+
+                if availability == "В наявності":
+                    print(f"Product: {name} is available  from {url}")
+                    # Send message trough telegram bot whe prodcut is available
+                    await notify_telegram(f"Product: {name} is available")
+                else:
+                    print(f"Product: {name} is not available")
+
+
+
 
             # Sets up random delay to avoid overloading the site
             delay = random.randint(5, 30)
