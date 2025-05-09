@@ -91,5 +91,3 @@ Shutting down...
 "Product: Ліфтинг-крем для обличчя Medi-Peel Peptide-Tox Bor Cream з пептидним комплексом, 1.5 мл is available  from https://eva.ua/ua/pr477887/"
 
 "Product: Фотоепілятор Philips Lumea Series 9000 BRI973/00 is available  from https://eva.ua/ua/pr1535891/"
-
-"Shutting down..."
