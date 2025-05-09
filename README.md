@@ -48,31 +48,46 @@ Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
 # Example Output:
 
 Use existing config? (y/n): n
+How many URLs do you want to monitor? Enter a number and press Enter: 4
 
-How many URLs do you want to monitor? Enter a number and press Enter: 2
+Paste URL and press Enter (4 remaining): https://makeup.com.ua/ua/product/3608/
 
-Paste URL and press Enter (2 remaining): https://eva.ua/ua/pr1431541/
+Paste URL and press Enter (3 remaining): https://makeup.com.ua/ua/product/488791/#/option/2000573/
 
-Paste URL and press Enter (1 remaining): https://makeup.com.ua/ua/product/1120231/#/option/2649605/
+Paste URL and press Enter (2 remaining): https://eva.ua/ua/pr477887/
 
-Your URLs are: ['https://eva.ua/ua/pr1431541/', 'https://makeup.com.ua/ua/product/1120231/#/option/2649605/']
+Paste URL and press Enter (1 remaining): https://eva.ua/ua/pr1535891/
+
+Your URLs are: ['https://makeup.com.ua/ua/product/3608/', 'https://makeup.com.ua/ua/product/488791/#/option/2000573/', 'https://eva.ua/ua/pr477887/', 'https://eva.ua/ua/pr1535891/']
 
 Monitoring products ...
 
-Product: Гель для душу Green Way Чорна орхідея, жіночий, 750 мл is available
+Product: Rabanne 1 Million is available from https://makeup.com.ua/ua/product/3608/
 
-Product: Освітлювальна ампульна сироватка для обличчя is not available
+Next check is in 17 minutes / 1020 seconds
 
-Next check is in 18 minutes / 1080 seconds
+Product: Kiko Milano Long Lasting Colour Lip Marker is not available
 
-Next check is in 29 minutes / 1740 seconds
+Next check is in 13 minutes / 780 seconds
+
+Product: Ліфтинг-крем для обличчя Medi-Peel Peptide-Tox Bor Cream з пептидним комплексом, 1.5 мл is available  from https://eva.ua/ua/pr477887/
+
+Next check is in 17 minutes / 1020 seconds
+
+Product: Фотоепілятор Philips Lumea Series 9000 BRI973/00 is available  from https://eva.ua/ua/pr1535891/
+
+Next check is in 20 minutes / 1200 seconds
 
 Press Enter to stop monitoring...
 
+Shutting down...
+
 Telegram Bot Notification:
 
-"Product: Гель для душу Green Way Чорна орхідея, жіночий, 750 мл is available from https://eva.ua/ua/pr1431541/"
+"Product: Rabanne 1 Million is available from https://makeup.com.ua/ua/product/3608/"
 
-"Product: Освітлювальна ампульна сироватка для обличчя is not available from https://makeup.com.ua/ua/product/1120231/#/option/2649605/"
+"Product: Ліфтинг-крем для обличчя Medi-Peel Peptide-Tox Bor Cream з пептидним комплексом, 1.5 мл is available  from https://eva.ua/ua/pr477887/"
+
+"Product: Фотоепілятор Philips Lumea Series 9000 BRI973/00 is available  from https://eva.ua/ua/pr1535891/"
 
 "Shutting down..."
