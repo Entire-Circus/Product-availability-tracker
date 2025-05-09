@@ -82,7 +82,9 @@ Press Enter to stop monitoring...
 
 Shutting down...
 
-Telegram Bot Notification:
+---
+
+## Example Telegram Bot Notification:
 
 "Product: Rabanne 1 Million is available from https://makeup.com.ua/ua/product/3608/"
 
