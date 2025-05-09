@@ -23,6 +23,33 @@ The script gathers URLs of products provided by the user and continuously checks
 - Simple command-line interface for adding URLs.
 
 - Continuous monitoring until manually stopped.
+  
+---
+
+## Requirements
+
+- Python 3.10 or higher
+- The following Python libraries:
+  - `beautifulsoup4`
+  - `python-telegram-bot`
+
+---
+
+## Built With
+
+- [Python 3.10+](https://www.python.org/)
+- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
+- [python-telegram-bot](https://docs.python-telegram-bot.org/)
+---
+ ## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/Entire-Circus/Product-availability-tracker.git
+cd product-availability-tracker
+pip install -r requirements.txt
+```
 
 ---
 
