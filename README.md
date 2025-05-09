@@ -1,8 +1,11 @@
 # Product Availability Tracker (PAT)
 A simple Python script to monitor product availability on websites and send notifications via Telegram when a product becomes available. Constructed specifically for the site https://makeup.com.ua (MAKEUP) and https://eva.ua/ (eva.ua).
 
-Author: Lysenko Alexander
-Date: 13-04-2025
+---
+
+## Author
+
+- **Alexandr Lysenko** – [GitHub](https://github.com/Entire-Circus)
 
 ---
 
