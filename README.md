@@ -45,7 +45,8 @@ Replace the placeholders in the script with your actual TOKEN and CHAT_ID.
 
 ---
 
-<pre> ### Example Output:
+### Example Output:
+<pre>
 ```
 Use existing config? (y/n): n
 
